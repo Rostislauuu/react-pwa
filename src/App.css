@@ -1,0 +1,129 @@
+#root {
+  width: 100%;
+}
+
+/* App Layout */
+.app-header {
+  background-color: #242424;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+main {
+  padding: 2rem;
+}
+
+/* Pokemon List Styles */
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.pokemon-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pokemon-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: white;
+  text-transform: capitalize;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  color: #333;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.pokemon-card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+/* Pokemon Details Styles */
+.pokemon-details-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #646cff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.pokemon-details-card {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.pokemon-details-card h1 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.pokemon-sprite {
+  width: 200px;
+  height: 200px;
+  image-rendering: pixelated; /* Keeps pixel art crisp */
+}
+
+.pokemon-types {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0 2rem;
+}
+
+.type-badge {
+  background-color: #eee;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #555;
+}
+
+.pokemon-stats {
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.pokemon-stats h3 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.pokemon-stats ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pokemon-stats li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  text-transform: capitalize;
+}
